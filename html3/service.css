@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./image/school.jpg);    
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.title h1{
+        text-align: center;
+        font-size: 4rem;
+        color: #fff;
+        padding: 1rem;
+        margin: 2rem 0;
+        background: rgba(255, 51, 153, .05);
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        font-family: 'Secular One', sans-serif;
+    }
+.title h1 span{
+    color: green;
+}
+.services{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+.card{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    background-color: #efefef;
+    border-radius: 10px;
+    cursor: pointer;
+    min-height: 20vh;
+    animation-name: fadeIn;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    font-family: 'Secular One', sans-serif;
+}
+.card:hover{
+    background-color: #b8d4de;
+    transition: 0.4s ease;
+}
+.card .icon{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.card h2{
+    font-size: 28px;
+    color: green;
+    margin-bottom: 20px;
+}
+.card p{
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #1d1c1c;
+}
+.button{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #053608;
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.button:hover{
+    background-color: #dd810a;
+    transition: 0.4s ease;
+}
+
+@media screen and (max-width:940px) {
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 85%;
+        display: flex;
+        margin: 20px 0px;
+    }
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #015e20;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    width:100%;
+    right: 0;
+  }
+  @media only screen and (max-width: 600px) {
+    /* Adjust the footer styles as needed */
+    footer {
+      /* Example styles */
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
